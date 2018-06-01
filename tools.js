@@ -74,7 +74,7 @@ ToolsCollect.prototype = {
    */
   setCookie: function (name, value, days) {
     var date = new Date()
-    date.setDate(date.getDate + days)
+    date.setDate(date.getDate() + days)
     document.cookie = name + '=' + value + ';expires=' + date
   },
   /**
